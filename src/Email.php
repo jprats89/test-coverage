@@ -15,6 +15,11 @@ final class Email
         return new self($email);
     }
 
+    public static function functionNotCovered(string $email): self
+    {
+        return new self($email);
+    }
+
     public function __toString(): string
     {
         return $this->email;
