@@ -2,25 +2,25 @@ name: Example workflow for Codecov
 on: [push]
 
 jobs:
-    backend-tests:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout current commit
-              uses: actions/checkout@v2
+  backend-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current commit
+        uses: actions/checkout@v2
 
-            - name: Use PHP 8.0
-              uses: shivammathur/setup-php@v2
-              with:
-                  php-version: '8.0'
-                  tools: composer
+      - name: Use PHP 8.0
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.0"
+          tools: composer
 
-              - name: Upload coverage to Codecov
-                uses: codecov/codecov-action@v2
-                with:
-                  directory: ./coverage/reports/
-                  fail_ci_if_error: true
-                  files: .Email.php.xml
-                  flags: unittests
-                  name: codecov-umbrella
-                  path_to_write_report: ./coverage/codecov_report.txt
-                  verbose: true
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          directory: ./coverage/reports/
+          fail_ci_if_error: true
+          files: .Email.php.xml
+          flags: unittests
+          name: codecov-umbrella
+          path_to_write_report: ./coverage/codecov_report.txt
+          verbose: true
