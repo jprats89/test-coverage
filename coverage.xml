@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632815776">
+  <project timestamp="1632815776">
+    <file name="/Users/javierprats/Projects/test-coverage/src/Email.php">
+      <class name="Email" namespace="global">
+        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+      </class>
+      <line num="6" type="method" name="__construct" visibility="private" complexity="1" crap="1" count="3"/>
+      <line num="8" type="stmt" count="3"/>
+      <line num="10" type="stmt" count="2"/>
+      <line num="11" type="stmt" count="2"/>
+      <line num="13" type="method" name="fromString" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="15" type="stmt" count="3"/>
+      <line num="18" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="23" type="method" name="ensureIsValidEmail" visibility="private" complexity="2" crap="2" count="3"/>
+      <line num="25" type="stmt" count="3"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="2"/>
+      <metrics loc="34" ncloc="34" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+    </file>
+    <metrics files="1" loc="34" ncloc="34" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+  </project>
+</coverage>

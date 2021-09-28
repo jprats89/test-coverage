@@ -19,7 +19,7 @@ jobs:
         with:
           token: "70d0ed07-545b-4019-a8b8-965068e0a53d"
           fail_ci_if_error: true
-          files: ./index.xml, ./Email.php.xml
+          files: ./coverage.xml
           flags: unittests
           name: codecov-umbrella
           path_to_write_report: ./coverage/codecov_report.txt
