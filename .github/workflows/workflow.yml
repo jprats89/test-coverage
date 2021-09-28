@@ -19,7 +19,7 @@ jobs:
         with:
           directory: ./coverage/reports/
           fail_ci_if_error: true
-          files: Email.php.xml
+          files: index.xml, Email.php.xml
           flags: unittests
           name: codecov-umbrella
           path_to_write_report: ./coverage/codecov_report.txt
