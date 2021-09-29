@@ -2,9 +2,8 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Calculator::
- */
-final class EmailTest extends TestCase
+ * @covers Email
+ */final class EmailTest extends TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress(): void
     {
