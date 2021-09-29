@@ -15,7 +15,7 @@ jobs:
           tools: composer
 
       - name: "Install dependencies"
-        run: "composer install --prefer-dist --no-progress --no-suggest && composer development-enable"
+        run: "composer install --prefer-dist --no-progress --no-suggest"
 
       - name: "Run test suite"
         run: "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover coverage.xml"
